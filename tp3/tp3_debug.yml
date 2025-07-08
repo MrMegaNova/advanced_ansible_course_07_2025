@@ -64,7 +64,7 @@
       ansible.builtin.set_fact:
         day_number: "{{ ansible_date_time.day | int }}"
 
-    - name: Get date day
+    - name: Show date day
       ansible.builtin.debug:
         var: day_number
 

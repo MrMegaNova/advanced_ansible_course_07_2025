@@ -14,4 +14,4 @@
       ansible.posix.authorized_key:
         user: vagrant
         state: present
-        key: "{{ lookup('file', '/home/' + lookup('env','USER') + '/.ssh/id_rsa.pub') }}"
+        key: "{{ lookup('file', '/home/' + lookup('env', 'USER') + '/.ssh/id_rsa.pub') }}"
